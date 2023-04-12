@@ -7,17 +7,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./assets/css/style.css">
+    
 </head>
 
 <body>
 
     <header>
         <h1>Curso Hacker</h1>
+        <span>By Enzo Moraes & Matheus Sena</span>
         <a href="#secao-apresentacao" class="botao">ACESSE O CURSO</a>
     </header>
 
     <section id="secao-apresentacao">
-        <img class="avatar" src="./image2.svg" alt="avatar">
+        <img class="avatar" src="./assets/images/image2.svg" alt="avatar">
         <div id="texto-apresentacao">
             <h2>Ensinamos agora como hackear sua faculdade!</h2>
             <p>Aprenda agora como alterar suas notas no sistema com um método simples e eficiente de hacking!</p>
@@ -26,7 +28,7 @@
     </section>
 
     <section id="secao-projetos">
-        <h2>Plano de estudos:</h2>
+        <h2>CURSOS</h2>
         <ul>
             <li>
                 <div class="card-image">
@@ -43,7 +45,7 @@
                     <img src="https://media.istockphoto.com/id/1316011368/pt/foto/hacker-with-laptop-in-city-security.jpg?b=1&s=170667a&w=0&k=20&c=aEkK6M6TZlSrnoqBIkg4kwvFtSKNgZFxrfRj1i9tMkw=" alt="">
                 </div>
                 <div class="card-info">
-                    <h3>Criptografia</h3>
+                    <p>Criptografia</p>
                     <h4>TÉCNICAS AVANÇADAS DE CRIPTOGRAFIA</h4>
                     <a href="" class="button">SAIBA MAIS</a>
                 </div>
@@ -53,7 +55,7 @@
                     <img src="https://images.unsplash.com/photo-1525373698358-041e3a460346?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80" alt="">
                 </div>
                 <div class="card-info">
-                    <h3>Programação</h3>
+                    <p>Programação</p>
                     <h4>APRENDA AS LINGUAGENS DE PROGRAMAÇÃO NECESSÁRIAS</h4>
                     <a href="" class="button">saiba mais</a>
                 </div>
@@ -80,14 +82,14 @@
                 <label for="layout_nao">Não, já tenho</label>
             </div>
 
-            <label for="prazo">Prazo</label>
-            <input type="range" id="prazo">
+            <label for="prazo" id="label_prazo">Prazo</label>
+            <input type="range" id="prazo" min="1" max="10">
 
-            <output>R$ 0,00</output>
+            <output id="output">R$ 100,00</output>
         </form>
     </section>
     
-
+<script src="./assets/js/script.js"></script>
 </body>
 
 </html>

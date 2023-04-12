@@ -1,75 +1,73 @@
 @import url('https://fonts.googleapis.com/css2?family=Girassol&family=Inter&family=Irish+Grover&display=swap');
 
-
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    text-decoration: none;
 }
 
-
-body {
-    font-size: 100%;
-    background-image: url('../images/background2.svg');
-    background-repeat: no-repeat;
-    background-position: right 0;
-    background-color: black;
-    background-size: center;
+:root{
+    font-size: 62.5%; /*10px / 16px */
+    --font-default: 'Inter';
+    --font-heading: 'Irish Grover';
+    --color-default: #FFF;
+    --color-secundary: #000;
 }
 
-.conteudo{
-    margin-bottom: 48px;     /* Dá um espaçamento maior pro botão*/
+html{
+    scroll-behavior: smooth;
 }
 
-.conteudo-principal{
-    display: flex;
-    flex-direction: row;        /* Deixar tudo escrito em linhas horizontais*/
+body{
+    font-family: var(--font-default);
+}
+
+header{
+    display: flex; /*flexbox*/
+    flex-direction: column;
     align-items: flex-start;
-    justify-content: flex-start;
-    padding-top: 300px;
-    margin: 150px;
+    gap: 2rem;
+    height: 100vh;
+    background-image: url('../images/background2.svg');
+    background-size: cover;
+    color: var(--color-default);
+    /* shorthand */
+    padding: 21rem 11rem;
+   
 }
 
-.conteudo-principal-escrito{
-    display: flex;
-    flex-direction: column;    /* Deixar tudo escrito em colunas */
-    gap: 0px;
+h1, 
+h2, 
+h3 {
+    font-family: var(--font-heading);
+    font-weight: 900;   
 }
 
-.conteudo-principal-titulo{
-    font-family: 'Irish Grover';
-    font-weight: 400;
-    font-size: 60px;
-    line-height: 60.45px;
-    color: #FFF2E7;
+h1 {
+    font-size: 6rem;
+    margin-bottom: 1rem;
 }
 
-.conteudo-principal-subtitulo{
-    font-family: 'Inter';
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 30.26px;
+h2{
+    font-size: 4.4rem;
+}
+
+p{
+    font-size: 3rem;
+}
+
+span {
+    font-size: 4.5rem;
+}
+
+.botao{
+    padding: 1.4rem 11rem;
+    background: linear-gradient(90deg, #6A3093 0%, #A044FF 100%);
+    border-radius: 10px;
+    font-size: 3rem;
     color: #FFFFFF;
-}
-
-.conteudo-principal-escrito-botao{
-    background-color: #ECD6C4;
-    width: 263px;
-    height: 48px;
-    left: 119px;
-    top: 506px;
-    border: none;
-    box-shadow: 4px 5px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 20px;
-    font-family: 'Girassol';
-    font-weight: 400;
-    font-size: 36px;
-    background: #2555BF;
-}
-
-.conteudo-principal-escrito-botao:hover {
-    background-color: rgba(236, 214 ,196 ,0.53);     /* Fazer o botão ficar diferente quando passar o mouse em cima */
+    text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+    text-decoration: none;
 }
 
 section {
@@ -162,10 +160,11 @@ section {
     grid-template-columns: repeat(2, 1fr);
     justify-items: start;
     row-gap: 1rem;
-    padding: 2rem;
+    padding: 4rem 2rem;
     background-color: #FFF;
     border-radius: 10px;
     position: relative;
+    font-size: 1.6rem;
 }
 
 #secao-orcamento output{
@@ -175,13 +174,17 @@ section {
 #secao-orcamento h3{
     position: absolute;
     top: -10%;
+    left: 1rem;
     background-color: #6A3093;
     color: #FFF;
+    padding: .7rem;
+    border-radius: 5px;
 }
 
 input[type=number]{
     padding: .5rem;
-    background-color: #212121;
+    background-color: #949494;
     color: var(--color-default);
     border: none;
+    border-radius: .3rem;
 }
