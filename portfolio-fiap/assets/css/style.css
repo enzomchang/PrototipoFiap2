@@ -22,7 +22,7 @@ body{
     font-family: var(--font-default);
 }
 
-.hamburguer{
+#hamburguer{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -35,33 +35,49 @@ body{
     cursor: pointer;
 }
 
-.linha{
+#hamburguer .linha{
     height: .5rem;
     width: 100%;
     background-color: #FFF;
     box-shadow: 2px 2px 2px #000;
 }
 
-.menu{
+/* nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5rem;
+    position: fixed;
+    top: -10vh;
+    height: 10vh;
+    width: 100vw;
+    z-index: 10;
+    transition: right 1s; */
+
+
+#menu{
     height: 100vh;
     width: 20rem;
     position: fixed;
-    right: -20rem;
-    background-color: #FFF;
+    right: 0vw;
+    background-color: #000;
     z-index: 9;
     transition: right 1s;
     font-size: 1.8rem;
+    display: flex;
 }
 
-.menu a{
+#menu a{
     text-decoration: none;
-    color: var(--color-secundary);
+    color: var(--color-default);
+    list-style:none;
 }
-.menu a:hover{
+#menu a:hover{
     color: #6A3093;
 }
 
-.menu ul{
+#menu ul{
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -70,7 +86,7 @@ body{
     gap: 1.6rem
 }
 
-.menu li{
+#menu li{
     list-style: none;
 }
 
